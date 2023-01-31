@@ -1,14 +1,18 @@
 /*
   LED Control
+  
   This example scans for Bluetooth® Low Energy peripherals until one with the advertised service
   "19b10000-e8f2-537e-4f6c-d104768a1214" UUID is found. Once discovered and connected,
   it will remotely control the Bluetooth® Low Energy peripheral's LED, when the button is pressed or released.
+  
   The circuit:
   - Arduino MKR WiFi 1010, Arduino Uno WiFi Rev2 board, Arduino Nano 33 IoT,
     Arduino Nano 33 BLE, or Arduino Nano 33 BLE Sense board.
   - Button with pull-up resistor connected to pin 2.
+  
   You can use it with another board that is compatible with this library and the
   Peripherals -> LED example.
+  
   This example code is in the public domain.
 */
 
