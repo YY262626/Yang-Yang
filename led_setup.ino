@@ -95,20 +95,20 @@ void loop() {
       if (switchCharacteristic.written()) {
         if (switchCharacteristic.value()) {   // any value other than 0
           int temp_val = switchCharacteristic.value();
-          if ( temp_val <= -30) {  // any value other than 0
+          if ( 50 <= temp_val && temp_val <= 200) {  // any value other than 0
             pixel_1.fill(pixel_1.Color(0, 255, 0),0,NUM_PIXELS_1);
             pixel_1.show();
             delay(2000);
             pixel_1.clear();
             pixel_1.show();
-          } else if ( -29 <= temp_val && temp_val <= 29)      {  
+          } else if (  201 <= temp_val)      {  
             pixel_2.fill(pixel_2.Color(255, 0, 0),0,NUM_PIXELS_2);
             pixel_2.show();
             delay(2000);
             pixel_2.clear();
             pixel_2.show();
           }
-          else if ( 30 <= temp_val)      {                             // a 0 value
+          else if ( temp_val <= 50)      {                             // a 0 value
             pixel_3.fill(pixel_3.Color(255, 0, 0),0,NUM_PIXELS_3);
             pixel_3.show();
             delay(2000);  
